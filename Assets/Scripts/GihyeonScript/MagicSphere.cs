@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Magic : MonoBehaviour
+public class MagicSphere : MonoBehaviour
 {
     // 발사 구체의 속도
     public float speed = 15f;
