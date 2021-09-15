@@ -8,11 +8,23 @@ public class Gun : MonoBehaviour {
 	ParticleSystem bulletps;
 	ParticleSystem explosionPs;
 
+    // 20210915_KDH
+    // udp client socket
+    //public Transform ServerManager;
+    private UdpSocket udpSoc;
+
+    // 20210915_KDH
+    // magic casting 확인용 bool 변수
+    public bool isReadytoCast_Magic = false;
+
     public Transform crossHair;
 
     Vector3 originSize;
 	void Start()
 	{
+        // 20210916_KDH udpsocket 컴포넌트 가져옴
+        udpSoc = GetComponent<UdpSocket>();
+
         originSize = crossHair.localScale * 3.2f;
         if (bulletImpact)
 			bulletps = bulletImpact.GetComponent<ParticleSystem>();
@@ -21,8 +33,8 @@ public class Gun : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		//if(Input.GetButtonDown("Fire1"))
-		{
+        //if(Input.GetButtonDown("Fire1"))
+        {
 			Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
 			RaycastHit hitInfo;
 
