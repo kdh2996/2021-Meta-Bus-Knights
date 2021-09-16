@@ -34,6 +34,7 @@ public class MagicSphere : MonoBehaviour
             GameObject magicEffect = Instantiate(magicEffectPrefab, collision.transform.position, collision.transform.rotation);
             Destroy(magicEffect, 2f);
             Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
         else if (collision.collider.CompareTag("Level"))
         {
