@@ -60,8 +60,7 @@ public class Gun : MonoBehaviour {
                             explosion.position = hitInfo.transform.position;
                             explosionPs.Stop();
                             explosionPs.Play();
-                            explosion.GetComponent<AudioSource>().Stop();
-                            explosion.GetComponent<AudioSource>().Play();
+                     
 
                         }
                         Destroy(hitInfo.transform.gameObject);
@@ -70,8 +69,7 @@ public class Gun : MonoBehaviour {
                     {
                         if (bulletImpact)
                         {
-                            bulletImpact.GetComponent<AudioSource>().Stop();
-                            bulletImpact.GetComponent<AudioSource>().Play();
+                          
                         }
                     }
                 }

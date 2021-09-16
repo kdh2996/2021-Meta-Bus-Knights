@@ -42,7 +42,7 @@ public class TouchScreen : MonoBehaviour
         isUi = false;
 
         // 20210916_KDH udpsocket ÄÄÆ÷³ÍÆ® °¡Á®¿È
-        udpSoc = GetComponent<UdpSocket>();
+        udpSoc = GameObject.Find("3dPlayer").GetComponent<UdpSocket>();
     }
 
     void Update()

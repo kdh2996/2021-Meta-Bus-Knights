@@ -57,8 +57,6 @@ public class Gun2 : MonoBehaviour
                     {
                         if (bulletImpact)
                         {
-                            bulletImpact.GetComponent<AudioSource>().Stop();
-                            bulletImpact.GetComponent<AudioSource>().Play();
                         }
                     }
                 }
