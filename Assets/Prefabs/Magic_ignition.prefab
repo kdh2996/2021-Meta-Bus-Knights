@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  magicEffectPrefab: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
+  magicEffectPrefab: {fileID: 1980661682837642, guid: 3bea013a3fce5e94d97d2f375ed3b902, type: 3}
