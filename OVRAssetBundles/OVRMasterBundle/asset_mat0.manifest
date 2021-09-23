@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 962618936
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b152ffa9497f0854d51f9309ca8229f2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 939e20ecac0e95a3f7c5cfb3e57acb1d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Materials/Embers.mat
+- Assets/3D Explosions Pack1/Materials/Ashes - 1.mat
+- Assets/Imports/Oculus/VR/Materials/BasicHandMaterial.mat
+- Assets/3D Explosions Pack1/Materials/Fire - Ground.mat
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Materials/DebrisParticle.mat
+- Assets/3D Explosions Pack1/Materials/Flames - 2 Green.mat
+- Assets/3D Explosions Pack1/Materials/Flames - Base Green 2 - add.mat
+- Assets/3D Explosions Pack1/Materials/Smoke - Animated 1.mat
+- Assets/etc/Materials/Animated/CFX_Anim_Triangle2_Add.mat
+- Assets/3D Explosions Pack1/Materials/Shockwave - Green.mat
+- Assets/etc/Models/Materials/Material.005.mat
+- Assets/3D Explosions Pack1/Materials/Flames - 2 Blue.mat
+- Assets/etc/Materials/Buildings.mat
+- Assets/3D Explosions Pack1/Materials/glow - white.mat
+- Assets/3D Explosions Pack1/Materials/dust - 1.mat
+- Assets/Imports/Ultimate 10 Plus Shaders/Materials/Unique/Force Field.mat
+- Assets/3D Explosions Pack1/Materials/Flames - Base Green 2 - alpha.mat
+- Assets/Materials/Enemy.mat
+- Assets/3D Explosions Pack1/Materials/Shockwave - Orange.mat
+- Assets/3D Explosions Pack1/Materials/Flames - Base Blue - add.mat
+- Assets/etc/Models/Materials/Drone_KB_Diffuse.mat
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Materials/ExplosionDistortion.mat
+- Assets/3D Explosions Pack1/Materials/Shockwave - Blue.mat
+- Assets/etc/Materials/stone_atlas.mat
+- Assets/etc/Models/Materials/Material.006.mat
+- Assets/Imports/Ultimate 10 Plus Shaders/Materials/Unique/Plasma (1).mat
+- Assets/etc/Materials/ShapesMaterial_13.mat
+- Assets/etc/Materials/ShapesMaterial_31.mat
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Materials/Explosion.mat
+- Assets/etc/Materials/Trees.mat
+Dependencies:
+- C:/Users/LG/Desktop/2021-Meta-Bus-Knights/2021-Meta-Bus-Knights/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/LG/Desktop/2021-Meta-Bus-Knights/2021-Meta-Bus-Knights/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/Users/LG/Desktop/2021-Meta-Bus-Knights/2021-Meta-Bus-Knights/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/LG/Desktop/2021-Meta-Bus-Knights/2021-Meta-Bus-Knights/OVRAssetBundles/OVRMasterBundle/asset_tga0
+- C:/Users/LG/Desktop/2021-Meta-Bus-Knights/2021-Meta-Bus-Knights/OVRAssetBundles/OVRMasterBundle/asset_tif0

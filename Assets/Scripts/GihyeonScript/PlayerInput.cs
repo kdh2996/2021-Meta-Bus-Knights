@@ -7,15 +7,18 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     //카메라 관련
-    public float rotateSpeed = 200;
-    float mouseAngleX;
-    float mouseAngleY;
+    // public float rotateSpeed = 200;
+
+    // float mouseAngleX;
+    // float mouseAngleY;
 
     //값 할당은 내부에서만 가능하도록 getter/setter 지정
     public bool fireMagic { get; private set; }
     public int changeCharacterState { get; private set; }
+    //public bool fireMagic;
+    //public int changeCharacterState;
 
-    
+
     // 마법 발사와 캐릭터 상태 변경 함수 초기화
     void Start()
     {
@@ -28,6 +31,8 @@ public class PlayerInput : MonoBehaviour
     // 매 프레임마다 입력 체크
     void Update()
     {
+        /* vr 환경에서는 마우스 필요 없으니 주석 처리
+        ///////////////////////////////////////////////////////////////////
         //카메라 관련
         // 마우스 x,y축의 움직임 감지 , 좌우 : y축 회전, 위아래 : x축 회전
         float x = Input.GetAxis("Mouse X");
@@ -37,7 +42,7 @@ public class PlayerInput : MonoBehaviour
         mouseAngleX += x * rotateSpeed * Time.deltaTime; // 마우스 x각도 누적
         mouseAngleY += y * rotateSpeed * Time.deltaTime; // 마우스 y각도 누적
 
-        /*
+        
         if (mouseAngleY >= 90)
         {
             mouseAngleY = 90;
@@ -45,7 +50,7 @@ public class PlayerInput : MonoBehaviour
         else if (mouseAngleY <= -90)
         {
             mouseAngleY = -90;
-        }*/
+        }
         //mouseAngleY의 최소,최댓값 지정
         mouseAngleY = Mathf.Clamp(mouseAngleY, -90, 90);
 
@@ -59,10 +64,13 @@ public class PlayerInput : MonoBehaviour
             changeCharacterState++;
             changeCharacterState = changeCharacterState % 4;
         }
+        ///////////////////////////////////////////////////////////////////
+        */
+
     }
 
     // 20210812 changeCharacterState setter 
-    public void setChangeCharacterState(int val)
+    public void SetChangeCharacterState(int val)
     {
         changeCharacterState = val;
     }

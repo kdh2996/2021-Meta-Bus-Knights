@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 64893992
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 37fd430923464f835ffee82f45e717b9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Textures/Explosion.tif
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Textures/ExplosionEmission.tif
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Textures/SphereNormal.tif
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif
+- Assets/Imports/EffectExamples/Fire & Explosion Effects/Textures/SmokePuff01.tif
+Dependencies: []

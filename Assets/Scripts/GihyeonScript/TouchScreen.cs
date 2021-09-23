@@ -21,6 +21,9 @@ public class TouchScreen : MonoBehaviour
     //public Transform ServerManager;
     private UdpSocket udpSoc;
 
+    public string magicStr;
+    public bool isReceivedData_magic;
+
     // 20210915_KDH
     // magic casting 확인용 bool 변수
     public bool isReadytoCast_Magic = false;
@@ -41,12 +44,22 @@ public class TouchScreen : MonoBehaviour
 
         isUi = false;
 
+
+
         // 20210916_KDH udpsocket 컴포넌트 가져옴
-        udpSoc = GameObject.Find("3dPlayer").GetComponent<UdpSocket>();
+        udpSoc = GameObject.Find("VrSetting").GetComponent<UdpSocket>();
+
+        magicStr = udpSoc.curMagicStr;
+        isReceivedData_magic = udpSoc.isreceivedData;
+
     }
 
     void Update()
     {
+
+        magicStr = udpSoc.curMagicStr;
+        isReceivedData_magic = udpSoc.isreceivedData;
+
         // 프레임마다 체크 
         CheckIsPointing();
 
@@ -68,6 +81,7 @@ public class TouchScreen : MonoBehaviour
         }
 
             UiOnOff();
+
 
 
     } 
@@ -93,16 +107,16 @@ public class TouchScreen : MonoBehaviour
             {
                 vrUi.SetActive(true);
                 isUi = true;
-                //Debug.Log("활성화");
+                Debug.Log("활성화");
             }
             else if (udpSoc.curMagicStr == "UICall" && isUi == true)
             {
-                vrUi.SetActive(true);
-                isUi = true;
-                //Debug.Log("활성화");
+                vrUi.SetActive(false);
+                isUi = false;
+                Debug.Log("비활성화");
             }
         }
-
+        /*
         // space바 누를 시 UI ON/OFF
         if (Input.GetKeyDown(KeyCode.Space) && isUi == false)
         {
@@ -117,5 +131,6 @@ public class TouchScreen : MonoBehaviour
             //Debug.Log("비활성화");
 
         }
+        */
     }
 }

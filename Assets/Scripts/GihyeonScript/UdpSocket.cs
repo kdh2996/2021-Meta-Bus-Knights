@@ -12,7 +12,7 @@ public class UdpSocket : MonoBehaviour
     [HideInInspector] public bool isTxStarted = false;
 
     // Local host
-    [SerializeField] string IP = "192.168.25.38";
+    [SerializeField] string IP = "192.168.0.4";
 
     // Port : receive data from Server
     [SerializeField] int rxPort = 8000;
