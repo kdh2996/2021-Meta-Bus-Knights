@@ -87,12 +87,14 @@ public class PlayerAttack : MonoBehaviour
 
         if (touchScreen.isReceivedData_magic)
         {
-
+            /*
             if (touchScreen.magicStr == "magicCasting")
             {
                 Debug.Log("== Ready To Cast Magic ==");
                 isReadytoCast_Magic = true;
             }
+            */
+            isReadytoCast_Magic = true;
 
             if (touchScreen.magicStr == "fireball" && isReadytoCast_Magic)
             {

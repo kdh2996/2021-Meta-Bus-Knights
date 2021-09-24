@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Level
   - Button
+  - FxTemporaire
+  - Button1
+  - Button2
   layers:
   - Default
   - TransparentFX

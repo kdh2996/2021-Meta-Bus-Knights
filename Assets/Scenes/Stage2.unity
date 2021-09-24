@@ -967,7 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1710394014}
-  maxTime: 20
+  maxTime: 25
 --- !u!222 &297972470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1766,6 +1766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8613a3627b68aa49a32db6c126958c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  location: {fileID: 0}
+  cube: {fileID: 0}
   isReadytoCast_Magic: 0
   magicPrefabs:
   - {fileID: 7870853495756522869, guid: 59bb9ef5aacde714c898d3c1a7344baf, type: 3}
@@ -3428,6 +3430,8 @@ MonoBehaviour:
   location: {fileID: 510448029}
   cube: {fileID: 845237392281486152, guid: 9b66b1747794775449145b8b00665ef1, type: 3}
   fingerTip: {fileID: 1283849303}
+  magicStr: 
+  isReceivedData_magic: 0
   isReadytoCast_Magic: 0
 --- !u!1001 &1347469295
 PrefabInstance:
@@ -4795,6 +4799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8613a3627b68aa49a32db6c126958c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  location: {fileID: 0}
+  cube: {fileID: 0}
   isReadytoCast_Magic: 0
   magicPrefabs:
   - {fileID: 7870853495756522869, guid: 59bb9ef5aacde714c898d3c1a7344baf, type: 3}

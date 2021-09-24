@@ -66,12 +66,18 @@ public class TouchScreen : MonoBehaviour
         if (Physics.Raycast(fingerTip.transform.position, fingerTipForward, out RaycastHit ray, touchDistance))
         {
             Collider rayCollider = ray.collider;
-            if ((rayCollider.gameObject.tag=="Button") && isPointing && !isTouching)
+            if ((rayCollider.gameObject.tag=="Button1") && isPointing && !isTouching)
             {
                 isTouching = true;
                 // 버튼이 작동하는지 test용 prefab 생성
                 Instantiate(cube, location.transform.position, new Quaternion(), gameObject.transform);
 
+            }
+            else if ((rayCollider.gameObject.tag == "Button2") && isPointing && !isTouching)
+            {
+                isTouching = true;
+                // 버튼이 작동하는지 test용 prefab 생성
+                Application.Quit();
             }
             else 
             {

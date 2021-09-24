@@ -3,8 +3,8 @@ using System.Collections;
 
 public class DroneSpawn : MonoBehaviour {
 	public GameObject drone;
-	public float MIN_TIME = 1;
-	public float MAX_TIME = 2;
+	public float MIN_TIME = 4;
+	public float MAX_TIME = 6;
 	// Use this for initialization
 	void Start () {
 		StartCoroutine("CreateDrone");

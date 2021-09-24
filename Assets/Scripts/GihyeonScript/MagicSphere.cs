@@ -38,6 +38,8 @@ public class MagicSphere : MonoBehaviour
         }
         else if (collision.collider.CompareTag("Level"))
         {
+            GameObject magicEffect = Instantiate(magicEffectPrefab, collision.transform.position, collision.transform.rotation);
+            Destroy(magicEffect, 2f);
             Destroy(gameObject);
         }
     }
